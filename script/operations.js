@@ -14,3 +14,6 @@ console.log(typeof Blaaz, Blaaz);
 
 let Tab = [10, 20, 3.5];
 console.log(typeof Tab, Tab);
+
+const Moussa = 12;
+console.log(typeof Moussa, Moussa);
