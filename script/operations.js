@@ -1,19 +1,11 @@
-/*Formation java script*/
+let resultat = 0;
 
-//types de données
+const FirstNumber = 15;
+const SecondNumber = 10;
+// le resusltat doit etre 30;
+resultat = FirstNumber + SecondNumber;
 
-const PI = 22 / 7;
-console.log(typeof PI, PI);
+console.log(resultat);
 
-let Entier = 20;
-
-console.log(typeof Entier, Entier);
-
-Blaaz = "Mahamane";
-console.log(typeof Blaaz, Blaaz);
-
-let Tab = [10, 20, 3.5];
-console.log(typeof Tab, Tab);
-
-const Moussa = 12;
-console.log(typeof Moussa, Moussa);
+Produit = FirstNumber * SecondNumber;
+console.log(Produit);
