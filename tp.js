@@ -1,8 +1,5 @@
-
-
-
 function calculer(event) {
-    event.preventDefault();
+  event.preventDefault();
   console.log("effectuer un calcul");
   const premierNombreInput = document.getElementById("premierNombre");
   const premierNombre = premierNombreInput.value;
@@ -15,7 +12,5 @@ function calculer(event) {
   const resultat = 1 * premierNombre + 1 * secondNombre;
   console.log(resultat);
 
-  document.getElementById("resultat")= resultat;
+  document.getElementById("resultat").innerHTML = resultat;
 }
-
-
