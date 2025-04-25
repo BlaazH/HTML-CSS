@@ -1,6 +1,4 @@
 
-alert("salut");
-
 function calculer(event) {
     event.preventDefault();
   console.log("effectuer un calcul");
