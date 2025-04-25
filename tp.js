@@ -1,5 +1,5 @@
 
-alert("salut");
+
 
 function calculer(event) {
     event.preventDefault();
@@ -18,4 +18,4 @@ function calculer(event) {
   document.getElementById("resultat")= resultat;
 }
 
-alert("salut");
+
