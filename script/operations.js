@@ -11,15 +11,32 @@ function calculer(event) {
 
   const selectOperation = document.getElementById("operations");
   const valueOfselectOperation = selectOperation.value;
+  console.log(typeof valueOfselectOperation);
   let resultat = 0;
-  if (valueOfselectOperation == 1) {
+  if (Number(valueOfselectOperation) == 1) {
     resultat = 1 * premierNombre + 1 * secondNombre;
-  } else if (valueOfselectOperation == 2) {
+  } else if (Number(valueOfselectOperation) == 2) {
     resultat = Number(premierNombre) * Number(secondNombre);
   } else {
     resultat = Number(premierNombre) % Number(secondNombre);
   }
   console.log(resultat);
 
-  document.getElementById("resultat").innerHTML = resultat;
+  const Name = document.getElementById("name");
+  const nameInput = Name.value;
+  console.log("Name" + nameInput);
+
+  // les initiales
+  const firstNameAndLastname = nameInput.split("");
+  console.log(firstNameAndLastname);
+
+  // concatenation
+
+  let nameAndResultat = nameInput + " " + resultat;
+
+  //longueur d'une chaine de caractère
+  const lenght = nameAndResultat.length;
+  console.log(lenght);
+
+  document.getElementById("resultat").innerHTML = nameAndResultat;
 }
