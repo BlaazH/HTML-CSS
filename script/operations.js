@@ -29,10 +29,11 @@ function calculer(event) {
   // les initiales
   const firstNameAndLastname = nameInput.split("");
   console.log(firstNameAndLastname);
+  const initials = firstNameAndLastname[0] + firstNameAndLastname[1];
 
   // concatenation
 
-  let nameAndResultat = nameInput + " " + resultat;
+  let nameAndResultat = initials + " " + resultat;
 
   //longueur d'une chaine de caractère
   const lenght = nameAndResultat.length;
