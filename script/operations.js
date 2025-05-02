@@ -27,13 +27,13 @@ function calculer(event) {
   console.log("Name" + nameInput);
 
   // les initiales
-  const firstNameAndLastname = nameInput.split("");
+  const firstNameAndLastname = nameInput.split(" ");
   console.log(firstNameAndLastname);
-  const initials = firstNameAndLastname[0] + firstNameAndLastname[1];
+  const initials = `${firstNameAndLastname[0][0]} ${firstNameAndLastname[1][0]}`;
 
   // concatenation
 
-  let nameAndResultat = initials + " " + resultat;
+  let nameAndResultat = `${initials.toUpperCase()} ${resultat}`;
 
   //longueur d'une chaine de caractère
   const lenght = nameAndResultat.length;
