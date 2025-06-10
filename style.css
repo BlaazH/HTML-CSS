@@ -1,0 +1,7 @@
+.conatainer{
+    height: 1000vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
